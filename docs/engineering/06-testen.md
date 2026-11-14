@@ -22,3 +22,6 @@ Geen DB/migratie/concurrente mutatietest nodig: die functies ontbreken.
 
 De sandbox-shell kon localhost niet benaderen; de HTTP-tests zijn daarom vanuit
 de normale Node-testomgeving uitgevoerd. Die beperking is geen testresultaat.
+
+
+Spiderchart, 15 november 2026: 61 PHP-checks en 10 HTTP-checks geslaagd; PHP-syntax geslaagd. Headless Chrome: 14 assen/twee reeksen, desktop en 390px mobiel visueel bekeken, geen horizontale overflow, zonder JavaScript en in print zichtbaar. Drie beantwoorde assen, nulwaarden, weggelaten assen, escaping en fallback bij twee dimensies getest.

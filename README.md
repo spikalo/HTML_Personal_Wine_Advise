@@ -97,3 +97,11 @@ repository bevat geen oude gitgeschiedenis en gebruikt alleen de nieuwe origin.
 E-mailverzending is vervangen door lokaal afdrukken/PDF, zonder SMTP-credentials.
 Een eenduidige afstand vervangt KMeans en de inconsistente combinatie van
 nearest-neighbour-afstand en cosinepercentages uit de oude app.
+
+### Spiderchart in resultaten
+
+De spiderchart vergelijkt je ingevulde smaken met de beste druif op schaal 0–10.
+Jouw voorkeur heeft een doorgetrokken lijn; de druif een stippellijn. Alleen
+beantwoorde dimensies worden getoond. Bij minder dan drie dimensies blijft de
+waardentabel beschikbaar. De SVG werkt zonder JavaScript, past zich aan het
+scherm/thema aan en wordt meegenomen bij afdrukken of bewaren als PDF.

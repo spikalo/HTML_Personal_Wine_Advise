@@ -54,4 +54,15 @@ foreach ($wines as $wine) {
 }
 check(true, 'All wine values within documented ranges');
 check(!str_contains(e('<script>"&'), '<script>'), 'HTML output escaping');
+
+require __DIR__ . '/../app/radar.php';
+$radar = renderTasteRadar(['acidity' => 0, 'body' => 10, 'sweetness' => 5], $grapes[0], $questions);
+check(str_contains($radar, 'role="img"') && str_contains($radar, 'radar-description'), 'Accessible radar figure rendered');
+check(str_contains($radar, '400.00,310.00') && !str_contains($radar, '>Honing</text>'), 'Radar preserves zero and omits unanswered axes');
+check(substr_count($radar, 'class="radar-label"') === 3, 'Radar uses only three answered dimensions');
+check(!str_contains(renderTasteRadar(['body' => 5, 'acidity' => 5], $grapes[0], $questions), '<svg'), 'Two answered dimensions use explanatory table fallback');
+$escapedGrape = $grapes[0];
+$escapedGrape['name'] = '<script>alert(1)</script>';
+check(!str_contains(renderTasteRadar($profile, $escapedGrape, $questions), '<script>'), 'Radar escapes grape name');
+
 echo $passed . ' checks passed.' . PHP_EOL;

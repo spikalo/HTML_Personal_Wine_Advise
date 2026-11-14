@@ -12,3 +12,6 @@
 
 Open: live IIS-check en gebruikersacceptatie door Frank na upload. Er zijn geen
 open afhankelijke productvragen: de scope is in de opdracht bepaald.
+
+
+T-08: spiderchart herstellen (15 november 2026), gereed. SVG in app/radar.php, gekoppeld aan resultaat en exact dezelfde ingevulde scores als de tabel.

@@ -48,3 +48,23 @@ summary{cursor:pointer;color:var(--fj-text)}
 .skip-link:focus{top:8px}
 @media(max-width:575px){.hero{padding-top:38px;padding-bottom:12px}.hero-note{margin-left:0;display:block}.question-row{grid-template-columns:1fr 90px;gap:12px}.question-card{padding:20px!important}.brand{font-size:.9rem}.brand small{font-size:.62rem}.profile-table meter{width:35px}}
 @media print{html,body{background:white!important;color:black!important}.site-header,.hero,#smaaktest,#over-de-data,footer,.skip-link,.results .btn{display:none!important}.results{margin:0}.card{background:white!important;color:black!important;border-color:#ccc!important;break-inside:avoid}*{color:black!important}.wine-card{margin-bottom:12px}.results .row>div{width:100%}meter{display:none}}
+
+/* SVG radar chart shares the page theme and prints without JavaScript. */
+.taste-radar{margin:0 0 12px;break-inside:avoid}
+.taste-radar svg{display:block;width:100%;height:auto;overflow:visible}
+.radar-grid,.radar-axis{fill:none;stroke:var(--fj-border);stroke-width:1.2}
+.radar-tick{fill:var(--fj-muted);font-size:13px}
+.radar-label{fill:var(--fj-text);font-size:17px}
+.radar-user{fill:rgba(45,212,191,.16);stroke:var(--fj-accent);stroke-width:3;stroke-linejoin:round}
+.radar-grape{fill:rgba(217,119,6,.10);stroke:#e89935;stroke-width:3;stroke-dasharray:8 5;stroke-linejoin:round}
+.radar-user-point{fill:var(--fj-accent)}
+.radar-grape-point{fill:#e89935}
+[data-bs-theme=light] .radar-grape{stroke:#a65309}
+[data-bs-theme=light] .radar-grape-point{fill:#a65309}
+.taste-radar figcaption{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;font-size:.78rem}
+.taste-radar figcaption>span{display:inline-flex;align-items:center;gap:8px}
+.taste-radar figcaption small{display:block;flex-basis:100%;text-align:center}
+.radar-key{display:inline-block;width:24px;border-top:3px solid var(--fj-accent)}
+.radar-key-grape{border-color:#e89935;border-top-style:dashed}
+@media(max-width:575px){.radar-label{font-size:22px}.radar-tick{font-size:17px}}
+@media print{.radar-user,.radar-grape{stroke:#000}.radar-label,.radar-tick{fill:#000}.radar-grid,.radar-axis{stroke:#aaa}.radar-user-point,.radar-grape-point{fill:#000}.radar-key{border-color:#000}}

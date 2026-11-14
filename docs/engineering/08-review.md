@@ -16,3 +16,6 @@ Ruwe controles: PHP-tests, HTTP-testscript, browser met console/pageerror,
 datawaarden/IDs, XML en JS syntax. Productie-IIS kan lokaal niet worden bewezen;
 README eist verborgen-paden-smoketest. Geen blokkerende codebevinding binnen
 deze scope na herstel. Gehele veiligheid of foutloosheid wordt niet gegarandeerd.
+
+
+Spiderchart, 15 november 2026: zelfreview van SVG/escaping, schaal 0–10, overeenstemming met tabel, ontbrekende waarden en CSP. Geen CDN of JavaScript nodig. Geen blokkerende bevinding; live IIS nog niet bijgewerkt.

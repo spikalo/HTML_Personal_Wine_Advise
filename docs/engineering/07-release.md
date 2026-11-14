@@ -17,3 +17,6 @@ bedrijfsprofiel meeleveren. Bij mislukking vorige bestandsback-up terugzetten.
 Na upload: formulier/resultaat, mobiel, HTTP→HTTPS, verborgen paden en PHP/IIS-log.
 Alleen daarna is de specifieke serverinstallatie geverifieerd. Een GitHub-push
 betekent hier geen automatische IIS-uitrol.
+
+
+15 november 2026: spiderchart toegevoegd in index.php, app/radar.php en assets/css/site.css, met tests en documentatie. Voor serverupdate: git pull origin main in de bestaande website-repository; geen migratie of installatie nodig. Lokale browserchecks en regressies geslaagd. Geen automatische IIS-uitrol uitgevoerd.
