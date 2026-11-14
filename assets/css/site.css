@@ -1,0 +1,50 @@
+.site-header{background:var(--fj-surface)}
+.brand{color:var(--fj-text);text-decoration:none;font-weight:650;letter-spacing:-.025em}
+.brand img{border-radius:5px;flex-shrink:0}
+.brand small{display:block;font-size:.72rem;font-weight:400;letter-spacing:.03em;color:var(--fj-muted);margin-top:2px}
+.container{max-width:1180px}
+.hero{padding-top:72px;padding-bottom:54px}
+.hero h1{font-size:clamp(2.3rem,4.6vw,4.2rem);line-height:1.08;letter-spacing:-.055em;font-weight:650;margin:18px 0 24px}
+.hero .lead{max-width:680px;line-height:1.65;font-size:1.08rem}
+.eyebrow{color:var(--fj-accent);font-weight:650;font-size:.68rem;letter-spacing:.16em;margin:0 0 12px}
+.hero-note{display:inline-block;color:var(--fj-muted);font-size:.8rem;margin:16px}
+.catalogue-summary{min-height:260px;justify-content:center;border-radius:16px}
+.catalogue-summary>strong{font-size:4.2rem;letter-spacing:-.06em;line-height:1.2}
+.catalogue-summary .d-flex{font-size:.8rem}
+.section-space{margin-top:48px;scroll-margin-top:24px}
+.section-heading h2,.results>h2{font-size:clamp(1.8rem,3vw,2.6rem);letter-spacing:-.045em}
+.question-card{border-radius:12px;min-width:0}
+.question-card legend{float:none;font-size:1.15rem;font-weight:650;width:auto;margin:0 0 18px;padding:0}
+.question-card legend small{display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.14em;color:var(--fj-muted);margin-bottom:7px}
+.question-row{display:grid;grid-template-columns:1fr 96px;gap:18px;align-items:center;margin-bottom:20px;font-size:.9rem;line-height:1.6}
+.rating-input{display:flex;gap:6px;align-items:center;white-space:nowrap;color:var(--fj-muted);font-size:.75rem}
+.rating-input input{width:68px;text-align:center;font-size:1rem;padding:9px 5px}
+.question-card .form-check-label{font-size:.78rem;color:var(--fj-muted)}
+fieldset.is-skipped .question-row{opacity:.45}
+.form-toolbar{border-radius:12px}
+progress{accent-color:var(--fj-accent);height:6px}
+.btn{padding:.7rem 1.1rem;border-radius:7px;font-size:.9rem;font-weight:550}
+.btn-sm{padding:.4rem .65rem;font-size:.75rem}
+.btn-outline-secondary{--bs-btn-color:var(--fj-text);--bs-btn-border-color:var(--fj-border)}
+.match-score{color:var(--fj-accent);font-size:3rem;font-weight:650;letter-spacing:-.045em;margin:16px 0}
+.match-score small{color:var(--fj-muted);font-size:.8rem;letter-spacing:0;font-weight:400;margin-left:8px}
+.grape-list{padding:0;list-style:none;margin:12px 0 0}
+.grape-list li{display:flex;justify-content:space-between;border-top:1px solid var(--fj-border);padding:12px 0;font-size:.9rem;gap:16px}
+.profile-table{font-size:.78rem;margin-top:16px}
+.profile-table th{font-weight:500}
+.profile-table td,.profile-table th{padding:7px 4px}
+meter{width:65px;height:8px;vertical-align:middle;margin-right:6px}
+.wine-card{border-radius:12px}
+.wine-type{font-size:.66rem;text-transform:uppercase;letter-spacing:.09em;color:var(--fj-muted)}
+.text-accent{color:var(--fj-accent);font-size:.8rem}
+.wine-facts{font-size:.78rem;margin-bottom:0}
+.wine-facts>div{display:flex;justify-content:space-between;gap:8px;border-top:1px solid var(--fj-border);padding-top:9px;margin-top:9px}
+.wine-facts dt{font-weight:400;color:var(--fj-muted)}
+.wine-facts dd{margin:0;text-align:right}
+.wine-facts small{color:var(--fj-muted)}
+details{font-size:.9rem;line-height:1.75}
+summary{cursor:pointer;color:var(--fj-text)}
+.skip-link{position:absolute;left:16px;top:-80px;background:var(--fj-accent);color:var(--fj-on-accent);padding:12px;z-index:100}
+.skip-link:focus{top:8px}
+@media(max-width:575px){.hero{padding-top:38px;padding-bottom:12px}.hero-note{margin-left:0;display:block}.question-row{grid-template-columns:1fr 90px;gap:12px}.question-card{padding:20px!important}.brand{font-size:.9rem}.brand small{font-size:.62rem}.profile-table meter{width:35px}}
+@media print{html,body{background:white!important;color:black!important}.site-header,.hero,#smaaktest,#over-de-data,footer,.skip-link,.results .btn{display:none!important}.results{margin:0}.card{background:white!important;color:black!important;border-color:#ccc!important;break-inside:avoid}*{color:black!important}.wine-card{margin-bottom:12px}.results .row>div{width:100%}meter{display:none}}

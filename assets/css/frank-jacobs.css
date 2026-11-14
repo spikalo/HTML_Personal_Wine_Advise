@@ -1,0 +1,29 @@
+/* frank-jacobs design tokens — profiel frank-jacobs rev. 1 (voorstel, status: concept)
+   Gebruik na bootstrap.min.css. Donker = standaard (data-bs-theme="dark"). */
+:root,[data-bs-theme="light"]{
+  --fj-bg:#F5F7FB;--fj-surface:#FFFFFF;--fj-surface-2:#EEF2F8;--fj-border:#DDE3EE;
+  --fj-text:#0F172A;--fj-muted:#475569;--fj-accent:#0F766E;--fj-on-accent:#FFFFFF;
+  --fj-danger:#B91C1C;--fj-radius:.5rem;
+  --fj-font:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --fj-mono:ui-monospace,"Cascadia Mono",Consolas,monospace;
+}
+[data-bs-theme="dark"]{
+  --fj-bg:#0B1220;--fj-surface:#111A2E;--fj-surface-2:#18233A;--fj-border:#26324A;
+  --fj-text:#E6EBF5;--fj-muted:#94A3B8;--fj-accent:#2DD4BF;--fj-on-accent:#0B1220;
+  --fj-danger:#F87171;
+}
+[data-bs-theme]{
+  --bs-body-bg:var(--fj-bg);--bs-body-color:var(--fj-text);--bs-border-color:var(--fj-border);
+  --bs-secondary-color:var(--fj-muted);--bs-tertiary-bg:var(--fj-surface-2);
+  --bs-primary:var(--fj-accent);--bs-link-color:var(--fj-accent);--bs-link-hover-color:var(--fj-accent);
+  --bs-border-radius:var(--fj-radius);--bs-body-font-family:var(--fj-font);
+  --bs-font-monospace:var(--fj-mono);
+}
+.card,.fj-surface{background:var(--fj-surface);border-color:var(--fj-border)}
+.btn-primary{--bs-btn-bg:var(--fj-accent);--bs-btn-border-color:var(--fj-accent);--bs-btn-color:var(--fj-on-accent);
+  --bs-btn-hover-bg:var(--fj-accent);--bs-btn-hover-color:var(--fj-on-accent);--bs-btn-hover-border-color:var(--fj-accent);
+  --bs-btn-active-bg:var(--fj-accent);--bs-btn-active-color:var(--fj-on-accent)}
+.btn-primary:hover{filter:brightness(1.08)}
+.text-muted,.text-body-secondary{color:var(--fj-muted)!important}
+code,pre,.fj-mono{font-family:var(--fj-mono)}
+:focus-visible{outline:2px solid var(--fj-accent);outline-offset:2px}
